@@ -171,3 +171,116 @@ body {
   background-color: #1b4242;
   list-style: none;
 }
+
+@media screen and (max-width: 768px) {
+  .header .head-Wrap {
+    width: 330px;
+    height: 550px;
+  }
+
+  .header .head-Wrap .icon-Search-Box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .header .head-Wrap .icon-Search-Box .icon-Img {
+    height: 40px;
+  }
+
+  .header .head-Wrap .icon-Search-Box #input-Text {
+    font-size: 15px;
+  }
+
+  .header .head-Wrap .icon-Search-Box .search-Btn {
+    padding: 4px 15px;
+  }
+
+  .header .head-Wrap .profile-Card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .header .head-Wrap .profile-Card .prifle-Pic-Wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+  }
+
+  .header .head-Wrap .profile-Card .prifle-Pic-Wrap .profile-Img {
+    height: 100px;
+    background-color: #9ec8b9;
+    border-radius: 50%;
+    border: solid #1b4242 2px;
+    -webkit-user-drag: none; /* For older versions of Safari and Chrome */
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #5c8374;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap h1 {
+    font-size: 25px;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap .name-And-Link-Wrap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap .name-And-Link-Wrap a {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    -webkit-user-drag: none; /* For older versions of Safari and Chrome */
+    user-select: none; /* Optional: Disable text selection to prevent dragging in some browsers */
+    cursor: alias;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap .bio-Text {
+    font-family: inherit;
+    padding: 5px;
+    height: 100px;
+    overflow: auto;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap .repos-Followers-Wrap {
+    width: 98%;
+  }
+
+  .header .head-Wrap .profile-Card .profile-Text-Wrap .repos-Followers-Wrap ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+    background-color: #1b4242;
+    list-style: none;
+  }
+}
