@@ -1,4 +1,8 @@
 // importing our elements
+const searchBtn = document.getElementsByClassName(
+  "search-Btn"
+)[0] as HTMLElement;
+const inputText = document.getElementById("input-Text") as any;
 
 // Import Axios
 var axios;
@@ -22,7 +26,29 @@ function fetchData(name: any) {
 }
 
 // our functions
+const dynamicData = (): void => {};
 
 // our event lisnters
+
+searchBtn.addEventListener("click", () => {
+  const textVal = inputText.value;
+  if (textVal) {
+    console.log(textVal);
+  } else {
+    console.log("enter a name please");
+  }
+});
+
+addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const textVal = inputText.value;
+    if (textVal) {
+      console.log(textVal);
+    } else {
+      console.log("enter a name please");
+    }
+  }
+});
+
 // Call the function to fetch data
 fetchData(`Ameer2000Mzori`);
