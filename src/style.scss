@@ -10,6 +10,7 @@ $colorThree: #1b4242;
 body {
   padding: 0;
   margin: 0;
+  font-family: $fontOne;
 }
 
 .header {
@@ -26,6 +27,11 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 700px;
+    height: 400px;
+    background-color: $colorOne;
+    border-radius: 15px;
+    padding: 15px;
 
     .icon-Search-Box {
       display: flex;
@@ -35,10 +41,46 @@ body {
       justify-content: space-evenly;
       gap: 15px;
       width: 100%;
-      height: 40px;
+      height: 20%;
 
       .icon-Img {
-        height: 40px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      #input-Text {
+        font-family: $fontOne;
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        padding: 5px;
+        padding-left: 15px;
+      }
+
+      .search-Btn {
+        padding: 8px 35px;
+        border-radius: 5px;
+        background-color: #5c8374;
+        // background-color: transparent;
+        font-size: inherit;
+        font-weight: 600;
+        color: white;
+        border: solid $colorThree 2px;
+        cursor: pointer;
+      }
+
+      .search-Btn:hover {
+        background-color: $colorThree;
+        border-color: $colorTow;
+        color: $colorTow;
+      }
+
+      .search-Btn:active {
+        color: $colorTow;
+        background-color: $colorOne;
       }
     }
 
