@@ -45,6 +45,8 @@ body {
   background-color: #9ec8b9;
   border-radius: 50%;
   border: solid #1b4242 2px;
+  user-select: none;
+  -webkit-user-drag: none; /* For older versions of Safari and Chrome */
 }
 
 .header .head-Wrap .icon-Search-Box #input-Text {
@@ -111,6 +113,7 @@ body {
   background-color: #9ec8b9;
   border-radius: 50%;
   border: solid #1b4242 2px;
+  -webkit-user-drag: none; /* For older versions of Safari and Chrome */
 }
 
 .header .head-Wrap .profile-Card .profile-Text-Wrap {
@@ -138,6 +141,9 @@ body {
   font-size: 15px;
   color: white;
   font-weight: 600;
+  -webkit-user-drag: none; /* For older versions of Safari and Chrome */
+  user-select: none; /* Optional: Disable text selection to prevent dragging in some browsers */
+  cursor: alias;
 }
 
 .header .head-Wrap .profile-Card .profile-Text-Wrap .bio-Text {

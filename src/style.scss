@@ -49,6 +49,8 @@ body {
         background-color: $colorOne;
         border-radius: 50%;
         border: solid $colorThree 2px;
+        user-select: none;
+        -webkit-user-drag: none; /* For older versions of Safari and Chrome */
       }
 
       #input-Text {
@@ -115,6 +117,7 @@ body {
           background-color: $colorOne;
           border-radius: 50%;
           border: solid $colorThree 2px;
+          -webkit-user-drag: none; /* For older versions of Safari and Chrome */
         }
       }
 
@@ -141,6 +144,9 @@ body {
             font-size: 15px;
             color: white;
             font-weight: 600;
+            -webkit-user-drag: none; /* For older versions of Safari and Chrome */
+            user-select: none; /* Optional: Disable text selection to prevent dragging in some browsers */
+            cursor: alias;
           }
         }
 
