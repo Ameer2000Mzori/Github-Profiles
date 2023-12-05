@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Experience Scroll Animation, a captivating website meticulously crafted with HTML, SCSS, and TypeScript. Built using webpack and fortified with linters, this project ensures a seamless and error-free codebase. Immerse yourself in the live demo for a firsthand look at the captivating animations!
+> GitHub Profiles A website built with HTML, SCSS, and TypeScript, utilizing the GitHub API and Axios for seamless data retrieval. Linters are employed to maintain clean code. Explore the live demo to search for any GitHub user.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
@@ -39,7 +39,6 @@
   <li><a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a></li>
   <li><a href="https://stylelint.io/">Html/CSS Linters</a></li>
   <li><a href="https://eslint.org/">eslinters/TsLinters</a></li>
-    <li><a href="https://webpack.js.org/">Web Pack</a></li>
   </ul>
 </details>
 
