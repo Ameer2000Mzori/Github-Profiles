@@ -86,6 +86,67 @@ body {
   background-color: #9ec8b9;
 }
 
-.header .head-Wrap img {
-  height: 40px;
+.header .head-Wrap .profile-Card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.header .head-Wrap .profile-Card .prifle-Pic-Wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.header .head-Wrap .profile-Card .prifle-Pic-Wrap .profile-Img {
+  height: 150px;
+  background-color: #9ec8b9;
+  border-radius: 50%;
+  border: solid #1b4242 2px;
+}
+
+.header .head-Wrap .profile-Card .profile-Text-Wrap {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #5c8374;
+  color: white;
+  border-radius: 15px;
+}
+
+.header .head-Wrap .profile-Card .profile-Text-Wrap .bio-Text {
+  font-family: inherit;
+  padding: 5px;
+  height: 100px;
+  overflow: auto;
+}
+
+.header .head-Wrap .profile-Card .profile-Text-Wrap .repos-Followers-Wrap {
+  width: 98%;
+}
+
+.header .head-Wrap .profile-Card .profile-Text-Wrap .repos-Followers-Wrap ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-radius: 15px;
+  background-color: #1b4242;
+  list-style: none;
 }
