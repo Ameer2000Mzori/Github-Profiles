@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $fontOne;
+  cursor: url(./assets/new.png);
 }
 
 .header {
@@ -140,7 +141,6 @@ body {
             font-size: 15px;
             color: white;
             font-weight: 600;
-            cursor: alias;
           }
         }
 
