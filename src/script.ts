@@ -1,22 +1,28 @@
+// importing our elements
+
 // Import Axios
-let axios;
-// GitHub user profile URL
-const API_URL = "https://api.github.com/users/Ameer2000Mzori";
+var axios;
+
+// GitHub user profile Api
+var API_URL = "https://api.github.com/users/";
 
 // Fetching data with Axios
-function fetchData() {
+function fetchData(name: any) {
   // Make a GET request
   axios
-    .get(API_URL)
-    .then((response) => {
+    .get(API_URL + name)
+    .then(function (response) {
       // Handle the successful response
       console.log("Axios Response:", response.data);
     })
-    .catch((error) => {
+    .catch(function (error) {
       // Handle errors
       console.error("Axios Error:", error);
     });
 }
 
+// our functions
+
+// our event lisnters
 // Call the function to fetch data
-fetchData();
+fetchData(`Ameer2000Mzori`);
