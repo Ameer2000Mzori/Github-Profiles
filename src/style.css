@@ -125,6 +125,21 @@ body {
   border-radius: 15px;
 }
 
+.header .head-Wrap .profile-Card .profile-Text-Wrap .name-And-Link-Wrap {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.header .head-Wrap .profile-Card .profile-Text-Wrap .name-And-Link-Wrap a {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  cursor: alias;
+}
+
 .header .head-Wrap .profile-Card .profile-Text-Wrap .bio-Text {
   font-family: inherit;
   padding: 5px;

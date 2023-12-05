@@ -129,6 +129,21 @@ body {
         color: white;
         border-radius: 15px;
 
+        .name-And-Link-Wrap {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+
+          a {
+            font-size: 15px;
+            color: white;
+            font-weight: 600;
+            cursor: alias;
+          }
+        }
+
         .bio-Text {
           font-family: inherit;
           padding: 5px;
