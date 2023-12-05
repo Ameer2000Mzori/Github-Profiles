@@ -41,19 +41,27 @@ body {
 
 .header .head-Wrap .icon-Search-Box .icon-Img {
   height: 70px;
-  background-color: white;
+  background-color: #9ec8b9;
   border-radius: 50%;
+  border: solid #1b4242 2px;
 }
 
 .header .head-Wrap .icon-Search-Box #input-Text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  border: none;
   outline: none;
   border-radius: 15px;
   padding: 5px;
   padding-left: 15px;
+  background-color: #5c8374;
+  color: white;
+  border: solid #1b4242 2px;
+}
+
+.header .head-Wrap .icon-Search-Box #input-Text::placeholder {
+  background-color: #5c8374;
+  color: white;
 }
 
 .header .head-Wrap .icon-Search-Box .search-Btn {

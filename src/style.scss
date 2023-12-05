@@ -45,19 +45,27 @@ body {
 
       .icon-Img {
         height: 70px;
-        background-color: white;
+        background-color: $colorOne;
         border-radius: 50%;
+        border: solid $colorThree 2px;
       }
 
       #input-Text {
         font-family: $fontOne;
         font-weight: 500;
         font-size: 15px;
-        border: none;
         outline: none;
         border-radius: 15px;
         padding: 5px;
         padding-left: 15px;
+        background-color: #5c8374;
+        color: white;
+        border: solid $colorThree 2px;
+      }
+
+      #input-Text::placeholder {
+        background-color: #5c8374;
+        color: white;
       }
 
       .search-Btn {
