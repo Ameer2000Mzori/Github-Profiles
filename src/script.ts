@@ -2,7 +2,7 @@
 const searchBtn = document.getElementsByClassName(
   "search-Btn"
 )[0] as HTMLElement;
-const inputText = document.getElementById("input-Text") as any;
+let inputText = document.getElementById("input-Text") as any;
 const profileCard = document.getElementsByClassName(
   "profile-Card"
 )[0] as HTMLElement;
@@ -43,7 +43,7 @@ const dynamicData = (data): void => {
 <div class="profile-Text-Wrap">
   <div class="name-And-Link-Wrap">
     <h1 class="name-Surename">${data.name}</h1>
-    <a href="#" target="_blank">GO TO PROFILE</a>
+    <a href="${data.html_url}" target="_blank">GO TO PROFILE</a>
   </div>
   <p class="bio-Text">
     ${data.bio}
@@ -62,9 +62,11 @@ const dynamicData = (data): void => {
 // our event lisnters
 
 searchBtn.addEventListener("click", () => {
+  profileCard.innerHTML = `LOADING`;
   const textVal = inputText.value;
   if (textVal) {
-    console.log(textVal);
+    fetchData(textVal);
+    inputText.value = "";
   } else {
     console.log("enter a name please");
   }
@@ -72,53 +74,16 @@ searchBtn.addEventListener("click", () => {
 
 addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
+    profileCard.innerHTML = `LOADING`;
     const textVal = inputText.value;
     if (textVal) {
-      console.log(textVal);
+      fetchData(textVal);
+      inputText.value = "";
     } else {
       console.log("enter a name please");
     }
   }
 });
 
-// Call the function to fetch data
+// Call the function to fetch data by defualt :')
 fetchData(`Ameer2000Mzori`);
-
-// dynamic insert html tree
-
-// <div class="profile-Card">
-// <div class="prifle-Pic-Wrap">
-//   <img
-//     class="profile-Img"
-//     src=" https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-//     alt=""
-//   />
-// </div>
-// <div class="profile-Text-Wrap">
-//   <div class="name-And-Link-Wrap">
-//     <h1 class="name-Surename">Ameer Ameen</h1>
-//     <a href="#" target="_blank">GO TO PROFILE</a>
-//   </div>
-//   <p class="bio-Text">
-//     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-//     placeat hic explicabo nisi magni, ipsa et molestias quae enim
-//     repudiandae temporibus molestiae? Exercitationem voluptatem,
-//     perspiciatis expedita fugiat doloremque consectetur ab? Lorem
-//     ipsum dolor sit amet consectetur adipisicing elit. Aut placeat hic
-//     explicabo nisi magni, ipsa et molestias quae enim repudiandae
-//     temporibus molestiae? Exercitationem voluptatem, perspiciatis
-//     expedita fugiat doloremque consectetur ab? Lorem ipsum dolor sit
-//     amet consectetur adipisicing elit. Aut placeat hic explicabo nisi
-//     magni, ipsa et molestias quae enim repudiandae temporibus
-//     molestiae? Exercitationem voluptatem, perspiciatis expedita fugiat
-//     doloremque consectetur ab?
-//   </p>
-//   <div class="repos-Followers-Wrap">
-//     <ul>
-//       <li><p>300 Followers</p></li>
-//       <li><p>15 Following</p></li>
-//       <li><p>10 Repos</p></li>
-//     </ul>
-//   </div>
-// </div>
-// </div>
